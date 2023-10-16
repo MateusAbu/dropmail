@@ -51,3 +51,20 @@ npm install  //Para instalar as dependencias necessarias
 npm start //Para Iniciar a aplicação que geralmente como padrão estará no link http://localhost:3000/
 
 ```
+
+### Criando um Contêiner Docker
+
+Se desejar, você pode criar um contêiner Docker para o aplicativo. Certifique-se de ter o Docker instalado em sua máquina.
+
+```
+cd /caminho/do/projeto
+
+# Construa a imagem Docker
+docker build -t dropmail-app .
+
+# Execute um contêiner Docker a partir da imagem criada
+docker run -p 3000:3000 dropmail-app
+
+```
+
+Agora o aplicativo estará disponível em http://localhost:3000/ em seu navegador.
