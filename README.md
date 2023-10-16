@@ -8,7 +8,7 @@ Sites e serviços online geralmente exigem um endereço de e-mail válido para r
 
 Uma boa maneira de lidar com isso é usar um endereço de e-mail temporário se você não tiver certeza de que este site é absolutamente confiável e confiável. Dessa forma, você pode manter seus e-mails longe de spam e proteger sua privacidade. Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API de email temporário para que os usuários possam utilizar serviços sem expor seu email real, seguindo os requisitos propostos neste desafio.
 
-![Desktop](assets/desktop.png)
+![Desktop](./public/assets/desktop.png)
 
 ## Tecnologias utilizadas
 
@@ -40,7 +40,7 @@ git clone https://github.com/MateusAbu/dropmail.git
 
 ### Para rodar esse projeto, você vai precisar adicionar a variável de ambiente "apiKey" ao seu arquivo index.tsx 
 
-`apiKey=<temp_token>`
+` apiKey='temp_token' `
 
 
 ## Como rodar o projeto Localmente
