@@ -1,6 +1,6 @@
 import React from 'react'
-import CopiarInput from './TextCopy'
-import GetSessionData from './GetSessionData'
+import CopiarInput from '../TextCopy/TextCopy'
+import GetSessionData from '../GetSessionData/GetSessionData'
 
 const Header = () => {
 

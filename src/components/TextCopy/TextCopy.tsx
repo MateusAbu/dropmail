@@ -1,15 +1,11 @@
 import React from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { useSelector } from 'react-redux'
-import GetRandomEmail from './GetRandomEmail'
 import ContentCopyIcon from '@mui/icons-material/ContentCopy'
+import GetRandomEmail from '../GetRandomEmail/GetRandomEmail'
 
 const CopiarInput = () => {
   const userData = useSelector((state: any) => state.user)
-
-  console.log("email:", userData.email)
-  console.log("expiredAt:", userData.expiresAt)
-  console.log("id:", userData.id)
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(userData.email).then(

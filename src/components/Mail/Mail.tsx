@@ -9,8 +9,8 @@ interface MailProps {
 const Mail = ({ from, subject, text }: MailProps) => {
 
     function formatTextWithLineBreaks(text: string) {
-        const lines = text.split('\r\n');
-        return lines.map((line: any, index: number) => <div key={index}>{line}</div>)
+        const lines = text.split('\r\n')
+        return lines.map((line: any, index: number) => <div className='email-text' key={index}>{line}</div>)
     }
 
     const formattedText = formatTextWithLineBreaks(text)

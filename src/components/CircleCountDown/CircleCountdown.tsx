@@ -6,7 +6,7 @@ const CircleCountdown = ({ countdown }: any) => {
 
     return (
         <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-            <CircularProgress color="primary" variant="indeterminate" value={countdown} />
+            <CircularProgress color="primary" variant="indeterminate" value={countdown} data-testid="circle-countdown" />
             <Box
                 sx={{
                     top: 0,
@@ -23,6 +23,7 @@ const CircleCountdown = ({ countdown }: any) => {
                     variant="caption"
                     component="div"
                     color="text.secondary"
+                    data-testid="countdown-text"
                 >{countdown}</Typography>
             </Box>
         </Box>

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { gql, useQuery } from '@apollo/client'
 import { useDispatch, useSelector } from 'react-redux'
-import { setSessionData } from '../redux/sessionSlice'
+import { setSessionData } from '../../redux/sessionSlice'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive'
 import NotificationAddIcon from '@mui/icons-material/NotificationAdd'
-import CircleCountdown from './CircleCountdown'
+import CircleCountdown from '../CircleCountDown/CircleCountdown'
 
 const GetSessionData = () => {
   const userData = useSelector((state: any) => state.user)
@@ -76,10 +76,10 @@ const GetSessionData = () => {
       } else {
         setCountdown(countdown - 1)
       }
-    }, 1000);
+    }, 1000)
 
     return () => clearInterval(interval)
-  }, [countdown, refetch]);
+  }, [countdown, refetch])
 
   return (
     <div className='flex justify-center items-center'>

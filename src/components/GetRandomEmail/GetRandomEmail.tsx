@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { gql, useMutation } from '@apollo/client'
 import { useDispatch } from 'react-redux'
-import { setUser } from '../redux/userSlice'
+import { setUser } from '../../redux/userSlice'
 
 const GetRandomEmail = () => {
   const query = gql`

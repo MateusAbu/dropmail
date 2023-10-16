@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import ResumeMail from './ResumeMail'
 import { useSelector } from 'react-redux'
-import Mail from './Mail'
+import ResumeMail from '../ResumeMail/ResumeMail'
+import Mail from '../Mail/Mail'
 
 interface MailProps {
     from: string
