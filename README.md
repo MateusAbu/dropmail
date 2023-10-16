@@ -68,3 +68,5 @@ docker run -p 3000:3000 dropmail-app
 ```
 
 Agora o aplicativo estará disponível em http://localhost:3000/ em seu navegador.
+
+Este é o link para o deploy: https://main--roaring-paletas-47ae4f.netlify.app/
